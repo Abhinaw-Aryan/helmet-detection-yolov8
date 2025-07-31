@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}How It Works - HelmetVision{% endblock %}
+{% block content %}
+<h2 class="mb-4">How It Works</h2>
+<div class="row g-4">
+  <div class="col-md-4">
+    <div class="card custom-card h-100">
+      <div class="card-body">
+        <h5 class="card-title">🧠 AI Detection</h5>
+        <p class="card-text">Uses YOLOv8 to detect helmets and alert when none is detected.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card custom-card h-100">
+      <div class="card-body">
+        <h5 class="card-title">📸 Live Feed</h5>
+        <p class="card-text">Webcam feed is analyzed in real-time and streamed in the UI.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card custom-card h-100">
+      <div class="card-body">
+        <h5 class="card-title">🚦 Alerts</h5>
+        <p class="card-text">Red bounding boxes show non-compliance. Green means safe!</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

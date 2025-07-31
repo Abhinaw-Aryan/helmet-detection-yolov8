@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Home - HelmetVision{% endblock %}
+{% block content %}
+
+<section class="bg-secondary text-white p-5 rounded text-center mb-5 shadow">
+  <h1 class="display-5 fw-bold">Helmet Detection Dashboard</h1>
+  <p class="lead">AI-powered real-time helmet safety monitoring</p>
+  <a href="/how" class="btn btn-outline-light btn-lg mt-2">How It Works</a>
+</section>
+
+<!-- Video Feed Container -->
+<div class="position-relative d-flex justify-content-center">
+  <div class="video-container rounded overflow-hidden shadow border border-info">
+    <img src="{{ url_for('video') }}" id="live-feed" class="img-fluid" alt="Live Feed">
+
+    <!-- Helmet Badge -->
+    <span id="helmet-badge" class="badge position-absolute top-0 end-0 m-3 bg-success d-none">
+      <i class="bi bi-check-circle me-1"></i>Helmet
+    </span>
+
+    <!-- No Helmet Badge -->
+    <span id="no-helmet-badge" class="badge position-absolute top-0 start-0 m-3 bg-danger d-none">
+      <i class="bi bi-exclamation-circle me-1"></i>No Helmet
+    </span>
+  </div>
+</div>
+
+{% endblock %}

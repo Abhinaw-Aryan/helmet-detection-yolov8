@@ -14,11 +14,6 @@ A real-time helmet detection web application built using **Flask** and **YOLOv8*
 
 ---
 
-## 🧪 Demo Screenshots
-
-> ⚠️ _Coming Soon_ — add screenshots of detection results from your browser here!
-
----
 
 ## 🛠️ Setup Instructions
 
@@ -79,5 +74,3 @@ This project is licensed under the MIT License.
 🙋‍♂️ Author
 
 Abhinaw Aryan
-GitHub Profile
-
